@@ -9,7 +9,12 @@ public class BitwiseValuesSwap {
         second = first ^ second;
         first = first ^ second;
 
-        System.out.println("After swap: first = " + first + ", second = " + second);
+        System.out.println("After swap: first = " + first + ", second = " + second);()
+    }
+    public static void main(String[] args){
+        BitwiseValuesSwap bitwiseValuesSwap = new BitwiseValuesSwap();
+        bitwiseValuesSwap.swap(10, 20);
+
     }
 
 }

@@ -15,5 +15,9 @@ public class DigitsSumCalculator {
 
         System.out.println("Sum of digits: " + sum);
     }
+    public static void main(String[] args){
+        DigitsSumCalculator calculator = new DigitsSumCalculator();
+        calculator.calculateSum(1234);   // output: Sum of digits: 10
+    }
 
 }

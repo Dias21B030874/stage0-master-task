@@ -30,5 +30,15 @@ public class DaysInMonth {
 
         System.out.println(daysInMonth);
     }
+    private boolean isLeapYear(int year) {
+        return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
+    }
+    public static void main(String[] args){
+        DaysInMonth daysInMonth = new DaysInMonth();
+        daysInMonth.printDays(2021, 2);    // output: 28
+        daysInMonth.printDays(2024, 2);    // output: 29
+        daysInMonth.printDays(2021, 4);    // output: 30
+        daysInMonth.printDays(2021, 13);   // output: Invalid date
+    }
 
 }

@@ -28,5 +28,11 @@ public class SeasonDeterminer {
                 System.out.println("Wrong month number");
         }
     }
+    public static void main(String[] args){
+        SeasonDeterminer determiner = new SeasonDeterminer();
+        determiner.tellTheSeason(1);    // output: Winter
+        determiner.tellTheSeason(6);    // output: Summer
+        determiner.tellTheSeason(13);   // output: Wrong month number
+    }
 
 }

@@ -14,5 +14,9 @@ public class NumberReverter {
         int invertedNumber = ones * 100 + tens * 10 + hundreds;
         System.out.println("Reversed number: " + invertedNumber);
     }
+    public static void main(String[] args){
+        NumberReverter reverter = new NumberReverter();
+        reverter.revert(489);
+    }
 
 }

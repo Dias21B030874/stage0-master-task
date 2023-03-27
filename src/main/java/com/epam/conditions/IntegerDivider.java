@@ -17,5 +17,12 @@ public class IntegerDivider {
             System.out.println("Cannot be divided completely");
         }
     }
+    public static void main(String[] args){
+        IntegerDivider integerDivider = new IntegerDivider();
+        integerDivider.printCompletelyDivided(12, 3);    // output: Can be divided completely
+        integerDivider.printCompletelyDivided(11, 3);    // output: Cannot be divided completely
+        integerDivider.printCompletelyDivided(12, 0);    // output: Division by zero
+
+    }
 
 }
